@@ -1,8 +1,10 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\SocialiteController;
+use App\Http\Controllers\UsersController;
 
 Route::get('/pages/{page}', [PagesController::class, 'show'])->name('pages.show');
 Route::get('/auth/{social}/redirect', [SocialiteController::class, 'redirect'])
@@ -13,6 +15,8 @@ Route::get('/auth/{social}/callback', [SocialiteController::class, 'callback'])
     ->name('socialite.callback')
     ->whereIn('social', ['google']);
 
-Route::get('/', function () {
-    return view('welcome');
+Route::prefix('app')->middleware(['auth'])->name('app.')->group(function () {
+    Route::get('/', [HomeController::class, 'index'])->name('root');
+    Route::resource('users', UsersController::class);
 });
+

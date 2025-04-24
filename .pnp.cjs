@@ -35,6 +35,7 @@ const RAW_RUNTIME_STATE =
           ["@tailwindcss/typography", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:0.5.16"],\
           ["@tailwindcss/vite", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:4.1.4"],\
           ["axios", "npm:1.8.4"],\
+          ["choices.js", "npm:11.1.0"],\
           ["concurrently", "npm:9.1.2"],\
           ["laravel-echo", "npm:1.19.0"],\
           ["laravel-vite-plugin", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:1.2.0"],\
@@ -976,6 +977,16 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["choices.js", [\
+      ["npm:11.1.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/choices.js-npm-11.1.0-b8edba1abc-10c0.zip/node_modules/choices.js/",\
+        "packageDependencies": [\
+          ["choices.js", "npm:11.1.0"],\
+          ["fuse.js", "npm:7.1.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["chownr", [\
       ["npm:3.0.0", {\
         "packageLocation": "../../../.yarn/berry/cache/chownr-npm-3.0.0-5275e85d25-10c0.zip/node_modules/chownr/",\
@@ -1366,6 +1377,15 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../.yarn/berry/cache/function-bind-npm-1.1.2-7a55be9b03-10c0.zip/node_modules/function-bind/",\
         "packageDependencies": [\
           ["function-bind", "npm:1.1.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["fuse.js", [\
+      ["npm:7.1.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/fuse.js-npm-7.1.0-5dcae892a6-10c0.zip/node_modules/fuse.js/",\
+        "packageDependencies": [\
+          ["fuse.js", "npm:7.1.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -2180,6 +2200,7 @@ const RAW_RUNTIME_STATE =
           ["@tailwindcss/typography", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:0.5.16"],\
           ["@tailwindcss/vite", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:4.1.4"],\
           ["axios", "npm:1.8.4"],\
+          ["choices.js", "npm:11.1.0"],\
           ["concurrently", "npm:9.1.2"],\
           ["laravel-echo", "npm:1.19.0"],\
           ["laravel-vite-plugin", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:1.2.0"],\

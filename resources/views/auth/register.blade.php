@@ -87,8 +87,7 @@
             <div class="hidden relative flex-1 justify-center items-center w-0 h-full lg:flex bg-red-accent-200">
                 <div class="px-16">
                     <h1 class="text-7xl font-semibold tracking-tight text-white">
-                        Koteshen is your secret weapon against late-paying clients.<br><br> It’s like having a virtual debt
-                        collector, working 24/7, so you don’t have to
+                        AIVR
                     </h1>
                 </div>
             </div>
