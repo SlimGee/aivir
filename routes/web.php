@@ -1,10 +1,11 @@
 <?php
 
 use App\Http\Controllers\HomeController;
-use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\RolesController;
 use App\Http\Controllers\SocialiteController;
 use App\Http\Controllers\UsersController;
+use Illuminate\Support\Facades\Route;
 
 Route::get('/pages/{page}', [PagesController::class, 'show'])->name('pages.show');
 Route::get('/auth/{social}/redirect', [SocialiteController::class, 'redirect'])
@@ -18,5 +19,5 @@ Route::get('/auth/{social}/callback', [SocialiteController::class, 'callback'])
 Route::prefix('app')->middleware(['auth'])->name('app.')->group(function () {
     Route::get('/', [HomeController::class, 'index'])->name('root');
     Route::resource('users', UsersController::class);
+    Route::resource('roles', RolesController::class);
 });
-
