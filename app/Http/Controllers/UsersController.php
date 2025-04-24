@@ -31,7 +31,11 @@ class UsersController extends Controller
      */
     public function create()
     {
-        //
+        $roles = Role::all();
+
+        return view('app.users.create', [
+            'roles' => $roles,
+        ]);
     }
 
     /**
@@ -39,7 +43,13 @@ class UsersController extends Controller
      */
     public function store(StoreUserRequest $request)
     {
-        //
+        $params = $request->safe()->collect()->filter()->except('role_ids')->all();
+
+        $user = User::create($params);
+
+        $user->roles()->sync($request->validated('role_ids'));
+
+        return to_route('app.users.index')->with('success', 'User was sucessfully created');
     }
 
     /**
@@ -47,7 +57,9 @@ class UsersController extends Controller
      */
     public function show(User $user)
     {
-        //
+        return view('app.users.show', [
+            'user' => $user,
+        ]);
     }
 
     /**
@@ -80,6 +92,8 @@ class UsersController extends Controller
      */
     public function destroy(User $user)
     {
-        //
+        $user->delete();
+
+        return to_route('app.users.index')->with('success', 'User was sucessfully removed');
     }
 }

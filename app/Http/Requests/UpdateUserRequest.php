@@ -4,6 +4,7 @@ namespace App\Http\Requests;
 
 use App\Actions\Fortify\PasswordValidationRules;
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rule;
 use Illuminate\Validation\Rules\Password;
 
@@ -39,5 +40,15 @@ class UpdateUserRequest extends FormRequest
             'role_ids' => ['sometimes', 'nullable', 'array'],
             'role_ids.*' => ['exists:'.config('permission.table_names.roles').',id'],
         ];
+    }
+
+    /**
+     * Handles a passed validation
+     */
+    protected function passedValidation()
+    {
+        if ($this->filled('password')) {
+            $this->replace(['password' => Hash::make($this->input('password'))]);
+        }
     }
 }
