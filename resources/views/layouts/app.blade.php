@@ -37,6 +37,7 @@
     <!-- CSS Preline -->
 
     @vite(['resources/js/app.js', 'resources/css/app.css'])
+    <script type="module" src="https://cdn.jsdelivr.net/npm/media-chrome@3/+esm"></script>
 </head>
 
 <body class="bg-gray-50/10 dark:bg-neutral-900">

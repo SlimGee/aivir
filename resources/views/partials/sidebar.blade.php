@@ -52,6 +52,14 @@
 
                     <li>
                         <a class="flex items-center gap-x-3.5 py-2 px-2.5  text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 dark:bg-neutral-700 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700 dark:text-white"
+                            href="{{ route('app.calls.index') }}">
+                            <x-lucide-phone class="h-5 w-5" />
+                            Call History
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="flex items-center gap-x-3.5 py-2 px-2.5  text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 dark:bg-neutral-700 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700 dark:text-white"
                             href="{{ route('app.users.index') }}">
                             <x-lucide-users class="h-5 w-5" />
                             Users

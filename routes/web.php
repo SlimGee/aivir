@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CallController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\RolesController;
@@ -20,4 +21,5 @@ Route::prefix('app')->middleware(['auth'])->name('app.')->group(function () {
     Route::get('/', [HomeController::class, 'index'])->name('root');
     Route::resource('users', UsersController::class);
     Route::resource('roles', RolesController::class);
+    Route::resource('calls', CallController::class);
 });
