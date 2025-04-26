@@ -106,7 +106,7 @@
                                             <div class="flex items-center gap-x-3">
                                                 <div class="grow">
                                                     <span
-                                                        class="block text-sm font-medium text-gray-800 dark:text-neutral-200">
+                                                        class="block text-xs font-semibold text-gray-800 dark:text-neutral-200">
                                                         {{ $call->created_at->format('d M Y H:m') }}
                                                     </span>
                                                 </div>
@@ -115,7 +115,7 @@
                                     </td>
                                     <td class="h-px  size-px whitespace-nowrap">
                                         <div class="px-6 py-3">
-                                            <span class="block text-sm font-medium text-gray-800 dark:text-neutral-200">
+                                            <span class="block text-xs font-semibold text-gray-800 dark:text-neutral-200">
                                                 {{ $call->number }}
                                             </span>
                                         </div>
@@ -123,23 +123,36 @@
 
                                     <td class="h-px  whitespace-nowrap">
                                         <div class="px-6 py-3">
-                                            <span class="block text-sm font-medium text-gray-800 dark:text-neutral-200">
+                                            <span class="block text-xs font-semibold text-gray-800 dark:text-neutral-200">
                                                 {{ gmdate('H:i:s', $call->duration) }}
                                             </span>
                                         </div>
                                     </td>
                                     <td class="whitespace-nowrap">
                                         <div class="px-6 py-3">
-                                            <span
-                                                class="py-1 px-1.5 inline-flex items-center gap-x-1 text-xs font-medium bg-teal-100 text-teal-800 rounded-full dark:bg-teal-500/10 dark:text-teal-500">
-                                                {{ $call->type }}
-                                            </span>
+                                            @if ($call->type == 'incoming')
+                                                <span
+                                                    class="py-1 px-1.5 inline-flex items-center gap-x-1 text-xs font-semibold bg-teal-100 text-teal-800 rounded dark:bg-teal-500/10 dark:text-teal-500">
+                                                    {{ $call->type }}
+                                                </span>
+                                            @elseif($call->type == 'missed')
+                                                <span
+                                                    class="py-1 px-1.5 inline-flex items-center gap-x-1 text-xs font-semibold bg-red-100 text-teal-800 rounded dark:bg-teal-500/10 dark:text-teal-500">
+                                                    {{ $call->type }}
+                                                </span>
+                                            @else
+                                                <span
+                                                    class="py-1 px-1.5 inline-flex items-center gap-x-1 text-xs font-semibold bg-orange-100 text-teal-800 rounded dark:bg-teal-500/10 dark:text-teal-500">
+                                                    {{ $call->type }}
+                                                </span>
+                                            @endif
                                         </div>
                                     </td>
                                     <td class="whitespace-nowrap">
                                         <div class="px-6 py-3">
                                             <div class="flex items-center gap-x-3">
-                                                <span class="block text-sm font-medium text-gray-800 dark:text-neutral-200">
+                                                <span
+                                                    class="block text-xs font-semibold text-gray-800 dark:text-neutral-200">
                                                     {{ $call->user->name }}
                                                 </span>
                                             </div>
@@ -162,6 +175,10 @@
                                     </td>
                                     <td class="size-px whitespace-nowrap">
                                         <div class="px-6 py-1.5">
+                                            <a class="font-semibold text-xs text-blue-600"
+                                                href="{{ route('app.calls.show', $call) }}">
+                                                Details
+                                            </a>
                                         </div>
                                     </td>
                                 </tr>

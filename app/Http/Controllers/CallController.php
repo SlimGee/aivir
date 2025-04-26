@@ -13,7 +13,7 @@ class CallController extends Controller
      */
     public function index()
     {
-        $calls = auth()->user()->calls()->paginate();
+        $calls = auth()->user()->calls()->paginate(10);
 
         return view('app.calls.index', [
             'calls' => $calls,
@@ -41,7 +41,9 @@ class CallController extends Controller
      */
     public function show(Call $call)
     {
-        //
+        return view('app.calls.show', [
+            'call' => $call,
+        ]);
     }
 
     /**
