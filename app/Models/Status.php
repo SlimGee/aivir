@@ -5,9 +5,9 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Call extends Model
+class Status extends Model
 {
-    /** @use HasFactory<\Database\Factories\CallFactory> */
+    /** @use HasFactory<\Database\Factories\StatusFactory> */
     use HasFactory;
 
     protected $guarded = [];

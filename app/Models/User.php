@@ -52,4 +52,9 @@ class User extends Authenticatable
     {
         return $this->hasMany(Call::class);
     }
+
+    public function status()
+    {
+        return $this->hasOne(Status::class);
+    }
 }

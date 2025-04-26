@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\RolesController;
 use App\Http\Controllers\SocialiteController;
+use App\Http\Controllers\StatusController;
 use App\Http\Controllers\UsersController;
 use Illuminate\Support\Facades\Route;
 
@@ -22,4 +23,5 @@ Route::prefix('app')->middleware(['auth'])->name('app.')->group(function () {
     Route::resource('users', UsersController::class);
     Route::resource('roles', RolesController::class);
     Route::resource('calls', CallController::class);
+    Route::post('/update-status', [StatusController::class, 'update'])->name('status.update');
 });

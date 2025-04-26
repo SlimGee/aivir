@@ -13,6 +13,7 @@
         "blade-ui-kit/blade-icons": "^1.8",
         "butschster/meta-tags": "^3.2",
         "flixtechs-labs/laravel-authorizer": "^0.2.0",
+        "forxer/laravel-gravatar": "^4.1",
         "hotwired-laravel/stimulus-laravel": "^1.3",
         "hotwired-laravel/turbo-laravel": "^2.3",
         "laravel/fortify": "^1.25",

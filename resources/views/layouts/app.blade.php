@@ -71,14 +71,26 @@
 
 
                 <div class="flex flex-row items-center justify-end gap-1">
+                    <form action="{{ route('app.status.update') }}" method="post" data-controller="autosubmit">
+                        <div class="flex items-center space-x-2 font-semibold">
+                            <label>Status:</label>
+                            <select name="value" data-action="autosubmit#handle"
+                                class="block border border-gray-300 rounded px-3 py-1.5 font-semibold  text-xs disabled:bg-whitertext-sm">
+                                @foreach ($statuses as $status)
+                                    <option value="{{ $status }}" @selected(auth()->user()->status?->value == $status)>
+                                        {{ Str::title($status) }}
+                                    </option>
+                                @endforeach
+                            </select>
+                        </div>
+                    </form>
 
 
                     <button id="hs-dropdown-account" type="button"
                         class="size-9.5 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-gray-800 focus:outline-hidden disabled:opacity-50 disabled:pointer-events-none dark:text-white"
                         aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
-                        <img class="shrink-0 size-9.5 rounded-full"
-                            src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80"
-                            alt="Avatar">
+                        <img class="shrink-0 size-9.5 rounded-full" src="{{ gravatar(auth()->user()->email) }}"
+                            alt="{{ auth()->user()->name }}">
                     </button>
 
                 </div>
