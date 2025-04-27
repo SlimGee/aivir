@@ -53,8 +53,20 @@ class User extends Authenticatable
         return $this->hasMany(Call::class);
     }
 
+    public function activeCall()
+    {
+        return $this->calls()->latest('accepted_at')->first();
+    }
+
     public function status()
     {
         return $this->hasOne(Status::class);
+    }
+
+    public static function inStatus($status)
+    {
+        $ids = Status::where('value', $status)->pluck('user_id')->unique()->all();
+
+        return User::where('id', $ids)->get();
     }
 }

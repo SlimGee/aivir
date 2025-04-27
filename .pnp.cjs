@@ -31,14 +31,18 @@ const RAW_RUNTIME_STATE =
           ["@hotwired/hotwire-native-bridge", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:1.2.1"],\
           ["@hotwired/stimulus", "npm:3.2.2"],\
           ["@hotwired/turbo", "npm:8.0.13"],\
+          ["@preline/helper-apexcharts", "npm:3.0.0"],\
           ["@tailwindcss/forms", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:0.5.10"],\
           ["@tailwindcss/typography", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:0.5.16"],\
           ["@tailwindcss/vite", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:4.1.4"],\
+          ["apexcharts", "npm:4.7.0"],\
           ["axios", "npm:1.8.4"],\
           ["choices.js", "npm:11.1.0"],\
           ["concurrently", "npm:9.1.2"],\
           ["laravel-echo", "npm:1.19.0"],\
           ["laravel-vite-plugin", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:1.2.0"],\
+          ["lodash", "npm:4.17.21"],\
+          ["preline", "npm:3.0.1"],\
           ["pusher-js", "npm:8.4.0"],\
           ["root-workspace-0b6124", "workspace:."],\
           ["tailwindcss", "npm:4.1.4"],\
@@ -303,6 +307,36 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["@floating-ui/core", [\
+      ["npm:1.6.9", {\
+        "packageLocation": "../../../.yarn/berry/cache/@floating-ui-core-npm-1.6.9-6b15c93868-10c0.zip/node_modules/@floating-ui/core/",\
+        "packageDependencies": [\
+          ["@floating-ui/core", "npm:1.6.9"],\
+          ["@floating-ui/utils", "npm:0.2.9"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@floating-ui/dom", [\
+      ["npm:1.6.13", {\
+        "packageLocation": "../../../.yarn/berry/cache/@floating-ui-dom-npm-1.6.13-faaec36e87-10c0.zip/node_modules/@floating-ui/dom/",\
+        "packageDependencies": [\
+          ["@floating-ui/core", "npm:1.6.9"],\
+          ["@floating-ui/dom", "npm:1.6.13"],\
+          ["@floating-ui/utils", "npm:0.2.9"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@floating-ui/utils", [\
+      ["npm:0.2.9", {\
+        "packageLocation": "../../../.yarn/berry/cache/@floating-ui-utils-npm-0.2.9-f2d9dffc79-10c0.zip/node_modules/@floating-ui/utils/",\
+        "packageDependencies": [\
+          ["@floating-ui/utils", "npm:0.2.9"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["@hotwired/hotwire-native-bridge", [\
       ["npm:1.2.1", {\
         "packageLocation": "../../../.yarn/berry/cache/@hotwired-hotwire-native-bridge-npm-1.2.1-25a05eb563-10c0.zip/node_modules/@hotwired/hotwire-native-bridge/",\
@@ -418,6 +452,15 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../.yarn/berry/cache/@pkgjs-parseargs-npm-0.11.0-cd2a3fe948-10c0.zip/node_modules/@pkgjs/parseargs/",\
         "packageDependencies": [\
           ["@pkgjs/parseargs", "npm:0.11.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@preline/helper-apexcharts", [\
+      ["npm:3.0.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@preline-helper-apexcharts-npm-3.0.0-36096d85c6-10c0.zip/node_modules/@preline/helper-apexcharts/",\
+        "packageDependencies": [\
+          ["@preline/helper-apexcharts", "npm:3.0.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -598,6 +641,95 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/unplugged/@rollup-rollup-win32-x64-msvc-npm-4.40.0-0261999477/node_modules/@rollup/rollup-win32-x64-msvc/",\
         "packageDependencies": [\
           ["@rollup/rollup-win32-x64-msvc", "npm:4.40.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@svgdotjs/svg.draggable.js", [\
+      ["npm:3.0.6", {\
+        "packageLocation": "../../../.yarn/berry/cache/@svgdotjs-svg.draggable.js-npm-3.0.6-791140de47-10c0.zip/node_modules/@svgdotjs/svg.draggable.js/",\
+        "packageDependencies": [\
+          ["@svgdotjs/svg.draggable.js", "npm:3.0.6"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:2371468822daa209b59867760d6cb32bc149e826d89b2173bb8a128598a1acde8504b56fe675b599f378bc858482f710cb3438b3a95cdb74f32720544d7832cd#npm:3.0.6", {\
+        "packageLocation": "./.yarn/__virtual__/@svgdotjs-svg.draggable.js-virtual-2789f71202/4/.yarn/berry/cache/@svgdotjs-svg.draggable.js-npm-3.0.6-791140de47-10c0.zip/node_modules/@svgdotjs/svg.draggable.js/",\
+        "packageDependencies": [\
+          ["@svgdotjs/svg.draggable.js", "virtual:2371468822daa209b59867760d6cb32bc149e826d89b2173bb8a128598a1acde8504b56fe675b599f378bc858482f710cb3438b3a95cdb74f32720544d7832cd#npm:3.0.6"],\
+          ["@svgdotjs/svg.js", "npm:3.2.4"],\
+          ["@types/svgdotjs__svg.js", null]\
+        ],\
+        "packagePeers": [\
+          "@svgdotjs/svg.js",\
+          "@types/svgdotjs__svg.js"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@svgdotjs/svg.filter.js", [\
+      ["npm:3.0.9", {\
+        "packageLocation": "../../../.yarn/berry/cache/@svgdotjs-svg.filter.js-npm-3.0.9-c4427b836f-10c0.zip/node_modules/@svgdotjs/svg.filter.js/",\
+        "packageDependencies": [\
+          ["@svgdotjs/svg.filter.js", "npm:3.0.9"],\
+          ["@svgdotjs/svg.js", "npm:3.2.4"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@svgdotjs/svg.js", [\
+      ["npm:3.2.4", {\
+        "packageLocation": "../../../.yarn/berry/cache/@svgdotjs-svg.js-npm-3.2.4-e1dfac9908-10c0.zip/node_modules/@svgdotjs/svg.js/",\
+        "packageDependencies": [\
+          ["@svgdotjs/svg.js", "npm:3.2.4"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@svgdotjs/svg.resize.js", [\
+      ["npm:2.0.5", {\
+        "packageLocation": "../../../.yarn/berry/cache/@svgdotjs-svg.resize.js-npm-2.0.5-b43f854246-10c0.zip/node_modules/@svgdotjs/svg.resize.js/",\
+        "packageDependencies": [\
+          ["@svgdotjs/svg.resize.js", "npm:2.0.5"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:2371468822daa209b59867760d6cb32bc149e826d89b2173bb8a128598a1acde8504b56fe675b599f378bc858482f710cb3438b3a95cdb74f32720544d7832cd#npm:2.0.5", {\
+        "packageLocation": "./.yarn/__virtual__/@svgdotjs-svg.resize.js-virtual-eedfbcf36f/4/.yarn/berry/cache/@svgdotjs-svg.resize.js-npm-2.0.5-b43f854246-10c0.zip/node_modules/@svgdotjs/svg.resize.js/",\
+        "packageDependencies": [\
+          ["@svgdotjs/svg.js", "npm:3.2.4"],\
+          ["@svgdotjs/svg.resize.js", "virtual:2371468822daa209b59867760d6cb32bc149e826d89b2173bb8a128598a1acde8504b56fe675b599f378bc858482f710cb3438b3a95cdb74f32720544d7832cd#npm:2.0.5"],\
+          ["@svgdotjs/svg.select.js", "virtual:2371468822daa209b59867760d6cb32bc149e826d89b2173bb8a128598a1acde8504b56fe675b599f378bc858482f710cb3438b3a95cdb74f32720544d7832cd#npm:4.0.2"],\
+          ["@types/svgdotjs__svg.js", null],\
+          ["@types/svgdotjs__svg.select.js", null]\
+        ],\
+        "packagePeers": [\
+          "@svgdotjs/svg.js",\
+          "@svgdotjs/svg.select.js",\
+          "@types/svgdotjs__svg.js",\
+          "@types/svgdotjs__svg.select.js"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@svgdotjs/svg.select.js", [\
+      ["npm:4.0.2", {\
+        "packageLocation": "../../../.yarn/berry/cache/@svgdotjs-svg.select.js-npm-4.0.2-c6d8a0ab6d-10c0.zip/node_modules/@svgdotjs/svg.select.js/",\
+        "packageDependencies": [\
+          ["@svgdotjs/svg.select.js", "npm:4.0.2"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:2371468822daa209b59867760d6cb32bc149e826d89b2173bb8a128598a1acde8504b56fe675b599f378bc858482f710cb3438b3a95cdb74f32720544d7832cd#npm:4.0.2", {\
+        "packageLocation": "./.yarn/__virtual__/@svgdotjs-svg.select.js-virtual-42fdb00426/4/.yarn/berry/cache/@svgdotjs-svg.select.js-npm-4.0.2-c6d8a0ab6d-10c0.zip/node_modules/@svgdotjs/svg.select.js/",\
+        "packageDependencies": [\
+          ["@svgdotjs/svg.js", "npm:3.2.4"],\
+          ["@svgdotjs/svg.select.js", "virtual:2371468822daa209b59867760d6cb32bc149e826d89b2173bb8a128598a1acde8504b56fe675b599f378bc858482f710cb3438b3a95cdb74f32720544d7832cd#npm:4.0.2"],\
+          ["@types/svgdotjs__svg.js", null]\
+        ],\
+        "packagePeers": [\
+          "@svgdotjs/svg.js",\
+          "@types/svgdotjs__svg.js"\
         ],\
         "linkType": "HARD"\
       }]\
@@ -843,6 +975,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["@yr/monotone-cubic-spline", [\
+      ["npm:1.0.3", {\
+        "packageLocation": "../../../.yarn/berry/cache/@yr-monotone-cubic-spline-npm-1.0.3-a6469f7958-10c0.zip/node_modules/@yr/monotone-cubic-spline/",\
+        "packageDependencies": [\
+          ["@yr/monotone-cubic-spline", "npm:1.0.3"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["abbrev", [\
       ["npm:3.0.1", {\
         "packageLocation": "../../../.yarn/berry/cache/abbrev-npm-3.0.1-a34d600e50-10c0.zip/node_modules/abbrev/",\
@@ -890,6 +1031,21 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../.yarn/berry/cache/ansi-styles-npm-6.2.1-d43647018c-10c0.zip/node_modules/ansi-styles/",\
         "packageDependencies": [\
           ["ansi-styles", "npm:6.2.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["apexcharts", [\
+      ["npm:4.7.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/apexcharts-npm-4.7.0-2371468822-10c0.zip/node_modules/apexcharts/",\
+        "packageDependencies": [\
+          ["@svgdotjs/svg.draggable.js", "virtual:2371468822daa209b59867760d6cb32bc149e826d89b2173bb8a128598a1acde8504b56fe675b599f378bc858482f710cb3438b3a95cdb74f32720544d7832cd#npm:3.0.6"],\
+          ["@svgdotjs/svg.filter.js", "npm:3.0.9"],\
+          ["@svgdotjs/svg.js", "npm:3.2.4"],\
+          ["@svgdotjs/svg.resize.js", "virtual:2371468822daa209b59867760d6cb32bc149e826d89b2173bb8a128598a1acde8504b56fe675b599f378bc858482f710cb3438b3a95cdb74f32720544d7832cd#npm:2.0.5"],\
+          ["@svgdotjs/svg.select.js", "virtual:2371468822daa209b59867760d6cb32bc149e826d89b2173bb8a128598a1acde8504b56fe675b599f378bc858482f710cb3438b3a95cdb74f32720544d7832cd#npm:4.0.2"],\
+          ["@yr/monotone-cubic-spline", "npm:1.0.3"],\
+          ["apexcharts", "npm:4.7.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -2101,6 +2257,16 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["preline", [\
+      ["npm:3.0.1", {\
+        "packageLocation": "../../../.yarn/berry/cache/preline-npm-3.0.1-e8cb1b3ef8-10c0.zip/node_modules/preline/",\
+        "packageDependencies": [\
+          ["@floating-ui/dom", "npm:1.6.13"],\
+          ["preline", "npm:3.0.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["proc-log", [\
       ["npm:5.0.0", {\
         "packageLocation": "../../../.yarn/berry/cache/proc-log-npm-5.0.0-405173f9b4-10c0.zip/node_modules/proc-log/",\
@@ -2196,14 +2362,18 @@ const RAW_RUNTIME_STATE =
           ["@hotwired/hotwire-native-bridge", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:1.2.1"],\
           ["@hotwired/stimulus", "npm:3.2.2"],\
           ["@hotwired/turbo", "npm:8.0.13"],\
+          ["@preline/helper-apexcharts", "npm:3.0.0"],\
           ["@tailwindcss/forms", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:0.5.10"],\
           ["@tailwindcss/typography", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:0.5.16"],\
           ["@tailwindcss/vite", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:4.1.4"],\
+          ["apexcharts", "npm:4.7.0"],\
           ["axios", "npm:1.8.4"],\
           ["choices.js", "npm:11.1.0"],\
           ["concurrently", "npm:9.1.2"],\
           ["laravel-echo", "npm:1.19.0"],\
           ["laravel-vite-plugin", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:1.2.0"],\
+          ["lodash", "npm:4.17.21"],\
+          ["preline", "npm:3.0.1"],\
           ["pusher-js", "npm:8.4.0"],\
           ["root-workspace-0b6124", "workspace:."],\
           ["tailwindcss", "npm:4.1.4"],\

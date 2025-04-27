@@ -13,6 +13,15 @@ class CallSeeder extends Seeder
      */
     public function run(): void
     {
-        Call::factory(500)->create(['user_id' => User::first()->id]);
+        $startOfmonth = now()->startOfMonth();
+
+        collect(range(0, 29))->each(function ($day) use ($startOfmonth) {
+            $created_at = $startOfmonth->addDay($day);
+
+            Call::factory(random_int(30, 100))->create([
+                'user_id' => User::first()->id,
+                'created_at' => $created_at,
+            ]);
+        });
     }
 }

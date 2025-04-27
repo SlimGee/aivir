@@ -8,6 +8,9 @@ import { Stimulus } from '../libs/stimulus'
 import AutosubmitController from './autosubmit_controller'
 Stimulus.register('autosubmit', AutosubmitController)
 
+import ChartController from './chart_controller'
+Stimulus.register('chart', ChartController)
+
 import ChoicesController from './choices_controller'
 Stimulus.register('choices', ChoicesController)
 
