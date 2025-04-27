@@ -16,4 +16,16 @@ class Status extends Model
     {
         return $this->belongsTo(User::class);
     }
+
+    public function color()
+    {
+        return match ($this->value) {
+            'active' => 'bg-teal-100',
+            'in call' => 'bg-green-100',
+            'lunch' => 'bg-purple-100',
+            'bathroom' => 'bg-blue-100',
+            'on leave' => 'bg-orange-100',
+            'case worker' => 'bg-red-100',
+        };
+    }
 }

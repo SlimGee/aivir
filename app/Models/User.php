@@ -48,6 +48,20 @@ class User extends Authenticatable
         ];
     }
 
+    /**
+     * The "booted" method of the model.
+     */
+    protected static function booted(): void
+    {
+
+        static::created(function (User $user) {
+
+            $user->status()->create();
+
+        });
+
+    }
+
     public function calls()
     {
         return $this->hasMany(Call::class);
