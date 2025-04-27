@@ -24,10 +24,14 @@ class RouteCallJob implements ShouldQueue
      */
     public function handle(): void
     {
+
         $next = User::inStatus('active')->first();
 
         $next->calls()->associate($this->call);
 
+        $next->status->update(['value' => 'in call']);
+
         $this->call->update(['accepted_at' => now()]);
+
     }
 }
